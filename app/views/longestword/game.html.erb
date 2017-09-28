@@ -1,0 +1,10 @@
+<h1>Welcome to the longest word game!</h1>
+
+<%= @grid %>
+
+<form action="/score">
+  <input type="text" name="attempt" placeholder="write..">
+  <input type="hidden" name="grid" value="<%= @grid%>">
+  <input type="hidden" name="start_time" value="<%= @start_time%>">
+  <input type="submit" value="attempt">
+</form>
